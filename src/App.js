@@ -1,11 +1,15 @@
 import React from "react";
 import GlobalStyle from "./components/styles/Globals.styles";
+import SettingsModal from "./components/SettingsModal";
+import { StyledMain } from "./components/styles/Layouts.styled";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      Hello World
+      <StyledMain>
+        <SettingsModal />
+      </StyledMain>
     </>
   );
 }
